@@ -5,8 +5,20 @@
       <router-link to="/about">Om</router-link>
     </div>
     <router-view/>
+   
   </div>
 </template>
+
+<script>
+
+
+export default {
+  name: "App",
+  components: {
+  
+  }
+}
+</script>
 
 <style>
 #app {

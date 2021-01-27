@@ -8,3 +8,13 @@
    
   </div>
 </template>
+
+<script>
+export default {
+  name: "TodoList"
+};
+</script>
+
+<style lang="stylus" scoped>
+
+</style>
