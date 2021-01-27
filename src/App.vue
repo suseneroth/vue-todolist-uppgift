@@ -2,21 +2,19 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Start</router-link> |
-      <router-link to="/about">Om</router-link>
+      <router-link to="/om">Om</router-link> |
+      <router-link to="/addtodo">Lägg till</router-link>
     </div>
     <router-view/>
-   
   </div>
 </template>
 
 <script>
 
-
 export default {
   name: "App",
-  components: {
   
-  }
+
 }
 </script>
 
