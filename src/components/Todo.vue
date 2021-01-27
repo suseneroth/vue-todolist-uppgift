@@ -9,12 +9,12 @@
 
 <script>
 export default {
-    props: ['title', 'description', 'time'],
-
+    props: ['todo', 'description', 'time'],
+ 
     methods:{
-        // removeTodo(){
-        //     this.$store.commit('removeTodo', this.todo)
-        // }
+        removeTodo(){
+            this.$store.commit('removeTodo', this.todo)
+        }
     }
 
 }

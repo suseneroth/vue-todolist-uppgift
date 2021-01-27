@@ -5,19 +5,15 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-   
+    todos: []
   },
   mutations: {
-    addTodo(state, todo){
-      state.todos.push(todo)
+    addTodo(state, todoAdded){
+      state.todos.push(todoAdded)
     },
 
-    // removeTodo(state){
-    //   state.todos = state.todos.filter(todo => todo !== todo)
-    // }
+    removeTodo(state, todoAdded){
+      state.todos = state.todos.filter(todo => todo !== todoAdded)
+    }
   },
-  actions: {
-  },
-  modules: {
-  }
 })

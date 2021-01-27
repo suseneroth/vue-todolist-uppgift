@@ -1,6 +1,8 @@
 <template>
   <div class="todo-container">
 
+  <Todo />
+
   <p>Completed Tasks: {{todos.filter(todo => {return todo.done === true}).length}}</p>
     <p>Pending Tasks: {{todos.filter(todo => {return todo.done === false}).length}}</p>
  
@@ -22,10 +24,18 @@
 
 
 <script>
-
+import Todo from './Todo.vue'
 
 export default {
    props: ['todos'],
+   components: {
+      Todo
+},
+// computed: {
+//     todos(){
+//         return this.$store.state.todos;
+//     }
+//   }
 };
 </script>
 
